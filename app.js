@@ -17,7 +17,7 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 
-app.get('/', (req, res, next) => {
+app.get('/apple-app-site-association', (req, res, next) => {
   return res.status(200).json({
     "applinks": {
     "apps": [],
